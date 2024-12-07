@@ -5,8 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Admin Dashboard</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
 </head>
 <body>
-    
+    <div class="grid-container">
+        <header class="header">
+            <i><img src="icons/stash--search-solid.svg" alt="" class="svg-icons"></i>
+            <input 
+                    type="search" 
+                    name="search" 
+                    id="search_input"
+                    class="search"
+            />
+        </header>
+        <nav class="nav">
+            <ul class="icons">
+                <li ><i><img src="icons/ic--baseline-dashboard.svg" alt="" class="dashboard-icon"></i></li>
+                <span class="dashboard">Dashboard</span>
+            </ul>
+            <ul class="tabs">
+              <li class="tab"><i><img src="icons/ant-design--home-filled.svg" alt="" class="svg-icons"></i>Home</li>
+              <li class="tab"><i><img src="icons/ix--user-profile-filled.svg" alt="" class="svg-icons"></i>Profile</li>
+              <li class="tab"><i><img src="icons/flowbite--messages-solid.svg" alt="" class="svg-icons"></i>Messages</li>
+              <li class="tab"><i><img src="icons/fa--history.svg" alt="" class="svg-icons"></i>History</li>
+              <li class="tab"><i><img src="icons/clarity--tasks-solid.svg" alt="" class="svg-icons"></i>Tasks</li>
+            </ul>
+            <ul class="tabs">
+                <li class="tab"><i><img src="icons/ic--baseline-settings.svg" alt="" class="svg-icons"></i>Settings</li>
+                <li class="tab"><i><img src="icons/material-symbols--contact-support.svg" alt="" class="svg-icons"></i>Support</li>
+                <li class="tab"><i><img src="icons/ic--round-privacy-tip.svg" alt="" class="svg-icons"></i>Privacy</li>
+            </ul>
+        </nav>
+        <main class="main">Main Content</main>
+    </div>    
+    <script src="index.js"></script>
 </body>
 </html>
