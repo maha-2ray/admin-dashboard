@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Dashboard</title>
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+</head>
+<body>
+    <div class="grid-container" id="dashboard">
+        <header class="header">
+            <div class="header-content">
+                <nav class="menu-toggle" id="navbar">           
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                </nav>
+                <i>
+                    <img 
+                        src="icons/tabler--search.svg" 
+                        alt="" 
+                        class="search-icon"
+                    >
+                </i>
+                <input 
+                        type="search" 
+                        name="search" 
+                        id="search_input"
+                        class="search"
+                />
+                <button 
+                        class="log-out" 
+                        id="logoutBtn">Logout
+                </button>
+            </div>
+            <div>
+                    <span 
+                    class="profile" 
+                    id="profile_name">
+                    </span>
+            </div>
+
+        </header>
+        <nav class="nav">
+            <ul class="icons">
+                <li><i><img src="icons/ic--baseline-dashboard.svg" alt="" class="dashboard-icon"></i></li>
+                <span class="dashboard">Dashboard</span>
+            </ul>
+            <ul class="tabs">
+              <li class="tab" id="home_tab"><i><img src="icons/ant-design--home-filled.svg" alt="" class="svg-icons"></i>Home</li>
+              <li class="tab" id="profile_tab"><i><img src="icons/ix--user-profile-filled.svg" alt="" class="svg-icons"></i>Profile</li>
+              <li class="tab" id="message_tab"><i><img src="icons/flowbite--messages-solid.svg" alt="" class="svg-icons"></i>Messages</li>
+              <li class="tab" id="history_tab"><i><img src="icons/fa--history.svg" alt="" class="svg-icons"></i>History</li>
+              <li class="tab" id="task_tab"><i><img src="icons/clarity--tasks-solid.svg" alt="" class="svg-icons"></i>Tasks</li>
+            </ul>
+            <ul class="tabs">
+                <li class="tab" id="setting_tab"><i><img src="icons/ic--baseline-settings.svg" alt="" class="svg-icons"></i>Settings</li>
+                <li class="tab" id="support_tab"><i><img src="icons/material-symbols--contact-support.svg" alt="" class="svg-icons"></i>Support</li>
+                <li class="tab" id="privacy_tab"><i><img src="icons/ic--round-privacy-tip.svg" alt="" class="svg-icons"></i>Privacy</li>
+            </ul>
+        </nav>
+        <main class="main" id="main_area"></main>
+    </div>    
+    <script src="index.js"></script>
+</body>
+</html>
