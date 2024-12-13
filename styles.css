@@ -9,11 +9,12 @@ body{
 .grid-container{
     display: grid;
     grid-template-areas: 
-    "header header"
-    "nav main ";
-    grid-template-rows: auto 1fr ;
-    grid-template-columns: 1fr 80vw;
+    "nav header"
+    "nav main";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 300px 1fr ;
     height: 100vh;
+
 }
 
 .header{
@@ -28,17 +29,20 @@ body{
     color: #001d3d;
     font-weight: bold;
     font-size: 2em;
-    padding: 0;
-    /* display: flex; */
+    width: 15vw;
+    padding: 1rem;
+    display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: space-between;
-    /* position: fixed; */
 }
+
 .main{
     grid-area: main;
     padding: 1rem;
     background-color: #d6eaf3;
-}
+    overflow-y: auto;
+} 
 .menu-toggle{
     display: none;
     flex-direction: column;
@@ -92,7 +96,7 @@ body{
     font-size: 20px;
     list-style-type: none;  
     margin: 20px;
-    width: 100%;
+    width: 25vw;
     padding: .4rem 0;
     cursor: pointer;
 }

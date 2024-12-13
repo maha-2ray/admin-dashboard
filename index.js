@@ -16,10 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.removeItem('user');
             window.location.href = 'login.html';
         });
-    }
-   
-
-    
+    }  
 
     const homeTab = document.getElementById('home_tab');
     const profileTab = document.getElementById('profile_tab');
@@ -138,17 +135,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <h1>Profile</h1>
         </div>
         <div class="profile-section">
-            <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+            <img src="icons/profile.jpg" alt="Profile Picture" class="profile-picture">
             <input type="file" id="profile-picture-upload" style="display: none;">
             <label for="profile-picture-upload" class="btn">Upload New Picture</label>
         </div>
         <div class="profile-section">
             <h2>Profile Details</h2>
             <div class="profile-info">
-                <p><strong>Name:</strong> John Doe</p>
-                <p><strong>Email:</strong> john.doe@example.com</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Location:</strong> New York, NY</p>
+                <p><strong>Name:</strong> Muhammed L Touray</p>
+                <p><strong>Email:</strong> mt22226020@gmail.com</p>
+                <p><strong>Phone:</strong> +220 3810819</p>
+                <p><strong>Location:</strong> New Yundum, West coast</p>
             </div>
             <button class="btn btn-secondary" id="edit-profile-btn">Edit Profile</button>
         </div>
@@ -161,15 +158,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" value="john.doe@example.com">
+                    <input type="email" id="email" value="mt22226020@gmail.com">
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone" value="+1 (555) 123-4567">
+                    <input type="tel" id="phone" value="+220 3810819">
                 </div>
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input type="text" id="location" value="New York, NY">
+                    <input type="text" id="location" value="New Yundum, West Coast">
                 </div>
                 <button type="submit" class="btn">Save Changes</button>
             </form>
@@ -184,19 +181,19 @@ document.addEventListener('DOMContentLoaded', () => {
             <ul class="activity-log">
                 <li class="activity-item">
                     <p>Updated profile picture</p>
-                    <span class="activity-date">2023-08-15 14:30</span>
+                    <span class="activity-date">2024-08-15 14:30</span>
                 </li>
                 <li class="activity-item">
                     <p>Changed password</p>
-                    <span class="activity-date">2023-08-10 09:15</span>
+                    <span class="activity-date">2024-08-10 09:15</span>
                 </li>
                 <li class="activity-item">
                     <p>Updated email preferences</p>
-                    <span class="activity-date">2023-08-05 11:45</span>
+                    <span class="activity-date">2024-08-05 11:45</span>
                 </li>
                 <li class="activity-item">
                     <p>Logged in from new device</p>
-                    <span class="activity-date">2023-07-30 18:20</span>
+                    <span class="activity-date">2024-07-30 18:20</span>
                 </li>
             </ul>
         </div>
@@ -229,8 +226,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.background = '#fff'
         privacyTab.style.color = '#001d3d'
     }
-
-    //To be implemented
     const messageContent = ()=>{
 
         const mainArea =  document.getElementById('main_area');
@@ -255,12 +250,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <ul class="message-list">
             <li class="message-item unread">
-                <span class="sender">John Doe</span>
+                <span class="sender">Babucarr Drammeh</span>
                 <span class="time">10:30 AM</span>
                 <div class="preview">Hey, I wanted to discuss the project...</div>
             </li>
             <li class="message-item">
-                <span class="sender">Jane Smith</span>
+                <span class="sender">Ebrima Mbye</span>
                 <span class="time">Yesterday</span>
                 <div class="preview">Thank you for your quick response...</div>
             </li>
@@ -279,16 +274,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         
         `
-
-
-
-
-
-
-
-
-
-
         homeTab.style.background = '#fff';
         homeTab.style.color = '#001d3d';
 
@@ -314,7 +299,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.color = '#001d3d'
     }
 
-    //To be implemented
     const historyContent = ()=>{
         const mainArea = document.getElementById('main_area');
         mainArea.innerHTML = 
@@ -339,28 +323,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="event-icon">T</div>
                 <div class="event-content">
                     <div class="event-title">Task Completed: Project Proposal</div>
-                    <div class="event-date">August 15, 2023 - 3:30 PM</div>
+                    <div class="event-date">November 15, 2024 - 3:30 PM</div>
                 </div>
             </li>
             <li class="event">
                 <div class="event-icon">M</div>
                 <div class="event-content">
                     <div class="event-title">Message Sent to: John Doe</div>
-                    <div class="event-date">August 14, 2023 - 11:45 AM</div>
+                    <div class="event-date">November 14, 2024 - 11:45 AM</div>
                 </div>
             </li>
             <li class="event">
                 <div class="event-icon">P</div>
                 <div class="event-content">
                     <div class="event-title">Profile Updated: Changed Profile Picture</div>
-                    <div class="event-date">August 12, 2023 - 2:15 PM</div>
+                    <div class="event-date">September 12, 2024 - 2:15 PM</div>
                 </div>
             </li>
             <li class="event">
                 <div class="event-icon">T</div>
                 <div class="event-content">
                     <div class="event-title">Task Created: Review Client Feedback</div>
-                    <div class="event-date">August 10, 2023 - 9:00 AM</div>
+                    <div class="event-date">October 10, 2024 - 9:00 AM</div>
                 </div>
             </li>
         </ul>
@@ -393,7 +377,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.color = '#001d3d'
     }
 
-    //To be implemented
     const taskContent = ()=>{
         const mainArea = document.getElementById('main_area');
         mainArea.innerHTML = 
@@ -421,7 +404,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="task-details">
                     <div class="task-title">Complete project proposal</div>
                     <div class="task-meta">
-                        Due: Aug 15, 2023 | Assigned to: John Doe | <span class="priority-high">High Priority</span>
+                        Due: Dec 25, 2024 | Assigned to: Amadou S Cham | <span class="priority-high">High Priority</span>
                     </div>
                 </div>
                 <div class="task-progress">
@@ -432,7 +415,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="task-details">
                     <div class="task-title">Review client feedback</div>
                     <div class="task-meta">
-                        Due: Aug 10, 2023 | Assigned to: Jane Smith | <span class="priority-medium">Medium Priority</span>
+                        Due: Jan 10, 2025 | Assigned to: Sheriff Jobe | <span class="priority-medium">Medium Priority</span>
                     </div>
                 </div>
                 <div class="task-progress">
@@ -443,7 +426,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="task-details">
                     <div class="task-title">Update team documentation</div>
                     <div class="task-meta">
-                        Due: Aug 20, 2023 | Assigned to: Mike Johnson | <span class="priority-low">Low Priority</span>
+                        Due: Dec 20, 2024 | Assigned to: Omar Keita | <span class="priority-low">Low Priority</span>
                     </div>
                 </div>
                 <div class="task-progress">
@@ -454,11 +437,6 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
         
         `
-
-
-
-
-
         homeTab.style.background = '#fff';
         homeTab.style.color = '#001d3d';
 
@@ -484,7 +462,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.color = '#001d3d'
     }
 
-    //To be implemented
     const settingContent = ()=>{
         const mainArea = document.getElementById('main_area');
         mainArea.innerHTML = 
@@ -572,7 +549,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         
         `
-
         homeTab.style.background = '#fff';
         homeTab.style.color = '#001d3d';
 
@@ -598,7 +574,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.color = '#001d3d'
     }
 
-    //To be implemented
     const supportContent = ()=>{
         const mainArea = document.getElementById('main_area');
         mainArea.innerHTML = 
@@ -684,7 +659,6 @@ document.addEventListener('DOMContentLoaded', () => {
         privacyTab.style.color = '#001d3d'
     }
 
-    //To be implemented
     const privacyContent = ()=>{
         const mainArea = document.getElementById('main_area');
         mainArea.innerHTML = 
@@ -753,9 +727,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
             <button class="btn">Manage Cookie Preferences</button>
         </div>
-    </div>
-        
-        
+    </div>   
         `
 
         homeTab.style.background = '#fff';
@@ -799,7 +771,6 @@ if(dashbaord){
     
 }
 
-// Quick Actions
 const quickActions = document.querySelectorAll('.quick-actions button');
 quickActions.forEach(button => {
     button.addEventListener('click', function() {
@@ -807,12 +778,10 @@ quickActions.forEach(button => {
     });
 });
 
-// Function to format numbers with commas
-function formatNumber(num) {
+const formatNumber = (num) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-// Function to update widget values
 function updateWidgetValue(widget, change) {
     const valueElement = widget.querySelector('.value');
     let currentValue = parseInt(valueElement.textContent.replace(/,/g, ''));
@@ -820,7 +789,6 @@ function updateWidgetValue(widget, change) {
     valueElement.textContent = formatNumber(currentValue);
 }
 
-// Function to add a new notification
 function addNotification(message, time) {
     const notifications = document.querySelector('.notifications ul');
     const newNotification = document.createElement('li');
@@ -834,7 +802,6 @@ function addNotification(message, time) {
     }
 }
 
-// Function to add a new activity
 function addActivity(user, action, item, time) {
     const activities = document.querySelector('.recent-activity ul');
     const newActivity = document.createElement('li');
@@ -848,15 +815,12 @@ function addActivity(user, action, item, time) {
     }
 }
 
-// Simulating real-time updates
-setInterval(function() {
-    // Update a random widget value
+setInterval( () => {
     const widgets = document.querySelectorAll('.widget');
     const randomWidget = widgets[Math.floor(Math.random() * widgets.length)];
-    const change = Math.floor(Math.random() * 10) - 5; // Random change between -5 and 5
+    const change = Math.floor(Math.random() * 10) - 5; 
     updateWidgetValue(randomWidget, change);
 
-    // Add a new notification
     const notificationMessages = [
         "New user registered",
         "Task completed",
@@ -866,7 +830,6 @@ setInterval(function() {
     const randomMessage = notificationMessages[Math.floor(Math.random() * notificationMessages.length)];
     addNotification(randomMessage, "Just now");
 
-    // Add a new activity
     const users = ["Alice", "Bob", "Charlie", "Diana"];
     const actions = ["completed", "created", "updated", "deleted"];
     const items = ["task", "project", "report", "meeting"];
@@ -874,17 +837,15 @@ setInterval(function() {
     const randomAction = actions[Math.floor(Math.random() * actions.length)];
     const randomItem = items[Math.floor(Math.random() * items.length)];
     addActivity(randomUser, randomAction, randomItem, "Just now");
-}, 5000); // Update every 5 seconds
+}, 5000); 
 
-// Search functionality
 const searchInput = document.getElementById('search-input');
 const searchButton = document.getElementById('search-button');
 
 function performSearch() {
     const searchTerm = searchInput.value.toLowerCase();
     alert(`Searching for: ${searchTerm}`);
-    // Here you would typically send this search term to a server
-    // or filter local data. For now, we'll just alert the search term.
+
 }
 
 searchButton.addEventListener('click', performSearch);
@@ -894,7 +855,6 @@ searchInput.addEventListener('keypress', function(e) {
     }
 });
 
-// Theme toggle functionality
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -908,7 +868,6 @@ themeToggle.addEventListener('change', function() {
     }
 });
 
-// Check for saved theme preference
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme === 'dark') {
     body.classList.add('dark-theme');
@@ -922,7 +881,6 @@ const editProfileBtn = document.getElementById('edit-profile');
     const profileUpload = document.getElementById('profile-upload');
     const profileImage = document.getElementById('profile-image');
 
-    // Open modal
     editProfileBtn.addEventListener('click', function() {
         modal.style.display = 'block';
         document.getElementById('edit-name').value = document.getElementById('user-name').textContent;
@@ -930,55 +888,48 @@ const editProfileBtn = document.getElementById('edit-profile');
         document.getElementById('edit-phone').value = document.getElementById('user-phone').textContent;
     });
 
-    // Close modal
-    closeBtn.addEventListener('click', function() {
+    closeBtn.addEventListener('click', () => {
         modal.style.display = 'none';
     });
 
-    // Close modal if clicked outside
-    window.addEventListener('click', function(event) {
+    window.addEventListener('click', (event) => {
         if (event.target == modal) {
             modal.style.display = 'none';
         }
     });
 
-    // Handle form submission
-    profileForm.addEventListener('submit', function(e) {
+    profileForm.addEventListener('submit', (e) => {
         e.preventDefault();
         document.getElementById('user-name').textContent = document.getElementById('edit-name').value;
         document.getElementById('user-email').textContent = document.getElementById('edit-email').value;
         document.getElementById('user-phone').textContent = document.getElementById('edit-phone').value;
         modal.style.display = 'none';
 
-        // Add to activity log
         addActivity('Profile updated');
     });
 
-    // Handle profile picture upload
-    profileUpload.addEventListener('change', function(e) {
+    profileUpload.addEventListener('change', (e) => {
         const file = e.target.files[0];
         if (file) {
             const reader = new FileReader();
-            reader.onload = function(e) {
+            reader.onload = (e) => {
                 profileImage.src = e.target.result;
                 addActivity('Profile picture updated');
             }
             reader.readAsDataURL(file);
         }
     });
-
-    // Simulate other button actions
-    document.getElementById('change-password').addEventListener('click', function() {
+    document.getElementById('change-password').addEventListener('click', () => {
         alert('Change password functionality would be implemented here.');
         addActivity('Password changed');
     });
 
-    document.getElementById('change-email').addEventListener('click', function() {
+    document.getElementById('change-email').addEventListener('click', () => {
         alert('Change email functionality would be implemented here.');
         addActivity('Email changed');
     });
 
-    document.getElementById('contact-preferences').addEventListener('click', function() {
+    document.getElementById('contact-preferences').addEventListener('click', () => {
         alert('Contact preferences functionality would be implemented here.');
         addActivity('Contact preferences updated');
     });
@@ -993,16 +944,15 @@ const editProfileBtn = document.getElementById('edit-profile');
 
 
 });
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.querySelector('.menu-toggle');
     const nav = document.querySelector('.nav');
 
-    menuToggle.addEventListener('click', function() {
+    menuToggle.addEventListener('click', () => {    
         nav.classList.toggle('active');
     });
 
-    // Close the menu when clicking outside of it
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', (event) => {
         const isClickInsideNav = nav.contains(event.target);
         const isClickOnMenuToggle = menuToggle.contains(event.target);
 
